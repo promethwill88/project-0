@@ -3,6 +3,9 @@ $(document).on("ready", function() {
 // Sanity Check
 console.log("Sanity Check: js file linked");
 
+let playerName = $('input').val();
+
+
 // Build fade in css animation on game start
 
 // Build form to take in name and pass onto scenarios
@@ -101,7 +104,7 @@ console.log("Sanity Check: js file linked");
 	                        "loc": 7
 	                    },
 	                     {
-	                        "desc": "You remain radio silent, pondering the strange yet all too familar response",
+	                        "desc": "You remain radio silent",
 	                        "loc": 8
 	                    }
 	                ]
