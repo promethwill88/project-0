@@ -10,61 +10,61 @@ console.log("Sanity Check: js file linked");
 
 	let theVoid = [
 	            {
-	                "desc": "Master Caution light flashing. You're disoriented.",
+	                "desc": "Master Caution light flashing. You're disoriented",
 	                "loc": 0,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Turn off Master Caution.",
+	                        "desc": "Turn off Master Caution",
 	                        "loc": 1
 	                    },
 	                    {
-	                        "desc": "Send a distress call.",
+	                        "desc": "Send a distress call",
 	                        "loc": 2
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Button pressed, warning goes off.",
+	                "desc": "Button pressed, warning goes off",
 	                "loc": 1,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Send a distress call.",
+	                        "desc": "Send a distress call",
 	                        "loc": 2
 	                    },
 	                    {
-	                        "desc": "Perform a systems check.",
+	                        "desc": "Perform a systems check",
 	                        "loc": 3
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Distress call failed. Communication Array offline.",
+	                "desc": "Distress call failed. Communication Array offline",
 	                "loc": 2,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Perform a full systems check.",
+	                        "desc": "Perform a full systems check",
 	                        "loc": 3
 	                    },
 	                    {
-	                        "desc": "Give up and fall back asleep.",
+	                        "desc": "Give up and fall back asleep",
 	                        "loc": 4
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You perform a systems check...Communication: Offline....Life Support: Online...Defensive Turret: Online...Propulsion: Offline. Suddenly, proximity alarm sounds. You see a strange alien craft approach.",
+	                "desc": "You perform a systems check...Communication: Offline....Life Support: Online...Defensive Turret: Online...Propulsion: Offline. Suddenly, proximity alarm sounds. You see a strange alien craft approach",
 	                "loc": 3,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Bring backup power online and ping the alien craft.",
+	                        "desc": "Bring backup power online and ping the alien craft",
 	                        "loc": 6
 	                    },
 	                    {
-	                        "desc": "Target alien craft and fire Defensive Turret.",
+	                        "desc": "Target alien craft and fire Defensive Turret",
 	                        "loc": 5
 	                    }
 	                ]
@@ -81,7 +81,7 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": "Turret fires, you hit the alien craft but doing only minor damage. The ship fires back severly damaging your ship. Structural integrity compromised...your ship explodes with a brilliant flash.",
+	                "desc": "Turret fires, you hit the alien craft but doing only minor damage. The ship fires back severly damaging your ship. Structural integrity compromised...your ship explodes with a brilliant flash",
 	                "loc": 5,
 	                "type": "choice",
 	                "choices": [
@@ -92,31 +92,31 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": "Communication: Online. Ping sent, you wait a few minutes with no response. Then suddenly, a transmission...Unknown spacecraft, power down immediately and surrender. You are trespassing in Zamdoid space.",
+	                "desc": "Communication: Online. Ping sent, you wait a few minutes with no response. Then suddenly, a transmission...Unknown spacecraft, power down immediately and surrender. You are trespassing in Zamdoid space",
 	                "loc": 6,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "You message response: ship damaged, require assistance.",
+	                        "desc": "You message response: ship damaged, require assistance",
 	                        "loc": 7
 	                    },
 	                     {
-	                        "desc": "You remain radio silent, pondering the strange yet all too familar response.",
+	                        "desc": "You remain radio silent, pondering the strange yet all too familar response",
 	                        "loc": 8
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Alien craft: Surrender and prepared to be boarded.",
+	                "desc": "Alien craft: Surrender and prepared to be boarded",
 	                "loc": 7,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Never give up, never surrender. You put the ship into lockdown mode.",
+	                        "desc": "Never give up, never surrender. You put the ship into lockdown mode",
 	                        "loc": 8
 	                    },
 	                     {
-	                        "desc": "You target the ship with the Defensive Turret. The best defense is a good offense.",
+	                        "desc": "You target the ship with the Defensive Turret. The best defense is a good offense",
 	                        "loc": 5
 	                    }
 	                ]
@@ -127,52 +127,52 @@ console.log("Sanity Check: js file linked");
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Target alien craft and fire Defensive Turret. They'll never take you alive.",
+	                        "desc": "Target alien craft and fire Defensive Turret. They'll never take you alive",
 	                        "loc": 5
 	                    },
 	                     {
-	                        "desc": "You quickly arm yourself and hide in the utility compartment.",
+	                        "desc": "You quickly arm yourself and hide in the utility compartment",
 	                        "loc": 9
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You hear loud metallic booms as the alien craft grabs your ship with its claw. The ship shakes and you hear the outer hatch open.",
+	                "desc": "You hear loud metallic booms as the alien craft grabs your ship with its claw. The ship shakes and you hear the outer hatch open",
 	                "loc": 9,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Take aim at the door with your blaster pistol. You fire as soon as the door opens.",
+	                        "desc": "Take aim at the door with your blaster pistol. You fire as soon as the door opens",
 	                        "loc": 11
 	                    },
 	                     {
-	                        "desc": "Barricade the door with supply crates. Hide.",
+	                        "desc": "Barricade the door with supply crates. Hide",
 	                        "loc": 10
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You hear loud heavy thuds of footsteps getting closer. It stops in front of your compartment. The door is forced open with ease, supply crates toppling over. You see the shadowy outline of a humanoid approach closer.",
+	                "desc": "You hear loud heavy thuds of footsteps getting closer. It stops in front of your compartment. The door is forced open with ease, supply crates toppling over. You see the shadowy outline of a humanoid approach closer",
 	                "loc": 10,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Remain motionless. Hope the alien will not see you.",
+	                        "desc": "Remain motionless. Hope the alien will not see you",
 	                        "loc": 12
 	                    },
 	                     {
-	                        "desc": "Fire your blaster at the alien.",
+	                        "desc": "Fire your blaster at the alien",
 	                        "loc": 11
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": 'You hit the alien dead on...it staggers back, "Ow! <insert player name> I told you to stop messing around to goto bed! Its way past your bedtime.',
+	                "desc": 'You hit the alien dead on...it staggers back, "Ow! <insert player name> I told you to stop messing around to goto bed! Its way past your bedtime',
 	                "loc": 11,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": '"Sorry Mom", you climb out of your pillow fort and head to bed.',
+	                        "desc": '"Sorry Mom", you climb out of your pillow fort and head to bed',
 	                        "loc": 14
 	                    },
 	                     {
@@ -182,7 +182,7 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": 'You can feel the alien hovering above you and yet you still do not move. The compartment suddenly gets lifted up, "<insert player name>, I told you to stop messing around and goto bed! Its way past your bedtime.',
+	                "desc": 'You can feel the alien hovering above you and yet you still do not move. The compartment suddenly gets lifted up, "<insert player name>, I told you to stop messing around and goto bed! Its way past your bedtime',
 	                "loc": 12,
 	                "type": "choice",
 	                "choices": [
@@ -197,7 +197,7 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": "You are grounded for the next week.",
+	                "desc": "You are grounded for the next week",
 	                "loc": 13,
 	                "type": "choice",
 	                "choices": [
@@ -208,7 +208,7 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": "You drift off to sleep in your warm bed dreaming of your next space adventure.",
+	                "desc": "You drift off to sleep in your warm bed dreaming of your next space adventure",
 	                "loc": 14,
 	                "type": "choice",
 	                "choices": [
@@ -219,7 +219,7 @@ console.log("Sanity Check: js file linked");
 	                ]
 	            },
 	            {
-	                "desc": "You get 5 more minutes in your pillow fort, and head to bed dreaming of your next space adventure.",
+	                "desc": "You get 5 more minutes in your pillow fort, and head to bed dreaming of your next space adventure",
 	                "loc": 15,
 	                "type": "choice",
 	                "choices": [
