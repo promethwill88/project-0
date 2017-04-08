@@ -233,11 +233,11 @@ console.log("Sanity Check: js file linked");
 	];
 
 	        function add_choice(desc, loc) {
-	            $("#choices").append("<button class=choice data-loc=" + loc + ">" + desc + "</button>");
+	            $("#choices").append("<a class='waves-effect waves-light btn'>" + "<button class=choice data-loc=" + loc + ">" + desc + "</button>" + "</a>");
 	        }	
 
 	        function set_page_desc(desc) {
-	            $("#scenario").append("<p>" + desc + "</p>");
+	            $("#scenario").append("<h6>" + desc + "</h6>");
 	        }
 
 	        function clear_page() {
