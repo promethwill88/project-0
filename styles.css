@@ -11,17 +11,6 @@ a {
 	margin-right: 10px;
 }
 
-p {
-	color: white;
-	font-family: 'Bungee Hairline', cursive;
-	color: white;
-	-webkit-animation: fadein 7s; 
-       -moz-animation: fadein 7s; 
-        -ms-animation: fadein 7s;
-         -o-animation: fadein 7s;
-            animation: fadein 7s;
-}
-
 button {
 	border: none;	
 	background-color: rgba(0,0,0,0);
@@ -42,6 +31,17 @@ h1 {
 	color: white;
 	-webkit-animation: fadein 7s;
        -moz-animation: fadein 7s;
+        -ms-animation: fadein 7s;
+         -o-animation: fadein 7s;
+            animation: fadein 7s;
+}
+
+p {
+	color: white;
+	font-family: 'Bungee Hairline', cursive;
+	color: white;
+	-webkit-animation: fadein 7s; 
+       -moz-animation: fadein 7s; 
         -ms-animation: fadein 7s;
          -o-animation: fadein 7s;
             animation: fadein 7s;

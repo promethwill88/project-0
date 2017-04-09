@@ -50,7 +50,7 @@ $(document).on("ready", function() {
 	                ]
 	            },
 	            {
-	                "desc": "Console: ....DISTRESS CALL (PRIORITY 1) FAILED....COMM ARRAY OFFLINE....",
+	                "desc": "[Console: ....DISTRESS CALL (PRIORITY 1) FAILED....COMM ARRAY OFFLINE....]",
 	                "loc": 3,
 	                "type": "choice",
 	                "choices": [
@@ -65,7 +65,7 @@ $(document).on("ready", function() {
 	                ]
 	            },
 	            {
-	                "desc": "You perform a systems check. Console: ....COMMUNICATION: OFFLINE....LIFE SUPPORT: ONLINE....DEFENSIVE SYSTEMS: ONLINE....PROPULSION: OFFLINE....ALERT ALERT: UNKNOWN CRAFT APPORACHING.... You look out the window again, and a dark angular alien spacecraft stops a few hundred meters off the starboard hull",
+	                "desc": "You perform a systems check. [Console: ....COMMUNICATION: OFFLINE....LIFE SUPPORT: ONLINE....DEFENSIVE SYSTEMS: ONLINE....PROPULSION: OFFLINE....ALERT ALERT: UNKNOWN CRAFT APPORACHING....] You look out the window again, and a dark angular alien spacecraft stops a few hundred meters off the starboard hull",
 	                "loc": 4,
 	                "type": "choice",
 	                "choices": [
@@ -91,7 +91,7 @@ $(document).on("ready", function() {
 	                ]
 	            },
 	            {
-	                "desc": "Weapons fired. You follow the bright fiery trails of the missiles launch. They hit with muted explosions, doing only minor damage. The alien ship fires back with luminous gleaming projectiles which severely damages your ship. Console: WARNING WARNING WARNING....STRUCTURAL INTEGRITY COMPROMISED....your ship explodes with a brilliant flash...",
+	                "desc": "Weapons fired. You follow the bright fiery trails of the missiles launch. They hit with muted explosions, doing only minor damage. The alien ship fires back with luminous gleaming projectiles which severely damages your ship. [Console: WARNING WARNING....STRUCTURAL INTEGRITY COMPROMISED....] Your ship explodes with a brilliant flash",
 	                "loc": 6,
 	                "type": "choice",
 	                "choices": [
@@ -102,12 +102,12 @@ $(document).on("ready", function() {
 	                ]
 	            },
 	            {
-	                "desc": "Console: ....BACKUP POWER REROUTED....COMMUNICATION: ONLINE. Ping sent, you wait a few minutes with no response, all the while staring intently out your flight deck window. Console: TRANSMISSION DETECTED...'POWER DOWN IMMEDIATLY AND SURRENDER.'",
+	                "desc": "[Console: ....BACKUP POWER REROUTED....COMMUNICATION: ONLINE....] Ping sent, you wait a few minutes with no response, all the while staring intently out your flight deck window. [Console: TRANSMISSION DETECTED....POWER DOWN IMMEDIATELY AND SURRENDER]'",
 	                "loc": 7,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "You respond: SHIP DAMAGED....REQUIRE ASSISTANCE",
+	                        "desc": "You respond: [SHIP DAMAGED....REQUIRE ASSISTANCE]",
 	                        "loc": 8
 	                    },
 	                     {
@@ -117,7 +117,7 @@ $(document).on("ready", function() {
 	                ]
 	            },
 	            {
-	                "desc": "ALIEN CRAFT: PREPARE TO BE BOARDED",
+	                "desc": "Alien craft: [PREPARE TO BE BOARDED]",
 	                "loc": 8,
 	                "type": "choice",
 	                "choices": [
@@ -182,7 +182,7 @@ $(document).on("ready", function() {
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": '"Sorry, Mom." ...you climb out of your pillow fort and head to bed',
+	                        "desc": '"Sorry, Mom." You climb out of your pillow fort and head to bed',
 	                        "loc": 15
 	                    },
 	                     {
