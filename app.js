@@ -1,11 +1,12 @@
 $(document).on("ready", function() {
 
-// Sanity Check
-console.log("Sanity Check: js file linked");
+	// Sanity Check
+	console.log("Sanity Check: js file linked");
 
-// Store player name in var
-let playerName = $('input').val();
+	// Store player name in var
+	let playerName = $('input').val();
 
+	// JSON data
 	let theVoid = [
 	            {
 	                "desc": "Mission Sol 177. Mars Sol Date: 72,891. Earth Date: Friday, April 9, 2049. It has been 177 days since NASA Aries 12 mission has launched from Kennedy Space Center. This is the first solo manned mission to Mars. You’ve been under a medically-induced hibernation since Mission Sol 7. Deep in your dreamless sleep, a violent jolt… You are awaken from your hibernation. Alarm klaxons sound throughout the cockpit. The flight controls are lit up like New Years Eve in Times Square. Your vision is blurry, your mind still trying to make sense of all the stimuli.  You slowly regain consciousness… ",
@@ -241,43 +242,43 @@ let playerName = $('input').val();
 
 	];
 
-			// Append choices onto page
-	        function add_choice(desc, loc) {
-	            $("#choices").append("<a class='waves-effect waves-cool btn-large'>" + "<button class=choice data-loc=" + loc + ">" + desc + "</button>" + "</a>");
-	        }	
+	// Append choices onto page
+    function add_choice(desc, loc) {
+        $("#choices").append("<a class='waves-effect waves-cool btn-large'>" + "<button class=choice data-loc=" + loc + ">" + desc + "</button>" + "</a>");
+    }	
 
-	        // Append scenario onto page
-	        function set_page_desc(desc) {
-	            $("#scenario").append("<h6>" + desc + "</h6>");
-	        }
+    // Append scenario onto page
+    function set_page_desc(desc) {
+        $("#scenario").append("<h6>" + desc + "</h6>");
+    }
 
-	        // Clearing page
-	        function clear_page() {
-	            $("#scenario").empty();
-	            $("#choices").empty();
-	        }
+    // Clearing page
+    function clear_page() {
+        $("#scenario").empty();
+        $("#choices").empty();
+    }
 
-	        // Fetch JSON for page data associated with given id
-	        function load_page(id) {
-	            let page_data = theVoid[id];
+    // Fetch JSON for page data associated with given id
+    function load_page(id) {
+        let page_data = theVoid[id];
 
-	            clear_page();
-	            set_page_desc(page_data.desc);
-	            if (page_data.type === 'choice') {
-	                for (let choice in page_data.choices) {
-	                    let choice_data = page_data.choices[choice];
-	                    add_choice(choice_data.desc, choice_data.loc);
-	                }
-	            }
-	        }
+        clear_page();
+        set_page_desc(page_data.desc);
+        if (page_data.type === 'choice') {
+            for (let choice in page_data.choices) {
+                let choice_data = page_data.choices[choice];
+                add_choice(choice_data.desc, choice_data.loc);
+            }
+        }
+    }
 
-	        // Event listener on click
-	        let current_page = 0;
-	            load_page(0);
-	            $('#choices').on('click', '.choice', function () {
-	                let loc = $(this).data('loc');
-	                load_page(loc);
-	            });
+    // Event listener on click
+    let current_page = 0;
+        load_page(0);
+        $('#choices').on('click', '.choice', function () {
+            let loc = $(this).data('loc');
+            load_page(loc);
+        });
 });
 
 

@@ -11,6 +11,17 @@ a {
 	margin-right: 10px;
 }
 
+p {
+	color: white;
+	font-family: 'Bungee Hairline', cursive;
+	color: white;
+	-webkit-animation: fadein 7s; 
+       -moz-animation: fadein 7s; 
+        -ms-animation: fadein 7s;
+         -o-animation: fadein 7s;
+            animation: fadein 7s;
+}
+
 button {
 	border: none;	
 	background-color: rgba(0,0,0,0);
@@ -29,10 +40,10 @@ button:hover{
 h1 {
 	font-family: 'Bungee Hairline', cursive;
 	color: white;
-	-webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 7s; /* Firefox < 16 */
-        -ms-animation: fadein 7s; /* Internet Explorer */
-         -o-animation: fadein 7s; /* Opera < 12.1 */
+	-webkit-animation: fadein 7s;
+       -moz-animation: fadein 7s;
+        -ms-animation: fadein 7s;
+         -o-animation: fadein 7s;
             animation: fadein 7s;
 }
 
@@ -40,12 +51,11 @@ h6 {
 	font-family: 'Inconsolata', monospace;
 	color: white;
 	margin-top: 70px;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-
+	-webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s;
+            animation: fadein 3s;
 }
 
 @keyframes fadein {
@@ -53,25 +63,21 @@ h6 {
     to   { opacity: 1; }
 }
 
-/* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Internet Explorer */
 @-ms-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* Opera < 12.1 */
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
