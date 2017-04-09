@@ -271,7 +271,6 @@ $(document).on("ready", function() {
             }
         }
     }
-
     // Event listener on click
     let current_page = 0;
         load_page(0);
