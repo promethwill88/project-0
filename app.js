@@ -3,205 +3,211 @@ $(document).on("ready", function() {
 // Sanity Check
 console.log("Sanity Check: js file linked");
 
+// Store player name in var
 let playerName = $('input').val();
-
-
-// Build fade in css animation on game start
-
-// Build form to take in name and pass onto scenarios
-// Display backstory with start button page to load game
 
 	let theVoid = [
 	            {
-	                "desc": "Master Caution light flashing. You're disoriented",
+	                "desc": "Mission Sol 177. Mars Sol Date: 72,891. Earth Date: Friday, April 9, 2049. It has been 177 days since NASA Aries 12 mission has launched from Kennedy Space Center. This is the first solo manned mission to Mars. You’ve been under a medically-induced hibernation since Mission Sol 7. Deep in your dreamless sleep, a violent jolt… You are awaken from your hibernation. Alarm klaxons sound throughout the cockpit. The flight controls are lit up like New Years Eve in Times Square. Your vision is blurry, your mind still trying to make sense of all the stimuli.  You slowly regain consciousness… ",
 	                "loc": 0,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Turn off Master Caution",
+	                        "desc": "Start Your Adventure",
 	                        "loc": 1
-	                    },
-	                    {
-	                        "desc": "Send a distress call",
-	                        "loc": 2
 	                    }
 	                ]
 	            },
-	            {
-	                "desc": "Button pressed, warning goes off",
+	              {
+	                "desc": "You're disoriented. You reach to turn off the Master Caution switch to stop the alarms. You begin to realize the severity of the situation. As you look out the flight deck window and see pieces of your own ship floating by.",
 	                "loc": 1,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Send a distress call",
+	                        "desc": "Put on your flight suit",
 	                        "loc": 2
 	                    },
 	                    {
-	                        "desc": "Perform a systems check",
+	                        "desc": "Send a priority 1 distress call",
 	                        "loc": 3
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Distress call failed. Communication Array offline",
+	                "desc": "You clumsily but quickly put on your flight suit, helmet, and personal life support system...",
 	                "loc": 2,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Perform a full systems check",
+	                        "desc": "Send a priority 1 distress call",
 	                        "loc": 3
 	                    },
 	                    {
-	                        "desc": "Give up and fall back asleep",
+	                        "desc": "Perform a full systems check for damage report",
 	                        "loc": 4
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You perform a systems check...Communication: Offline....Life Support: Online...Defensive Turret: Online...Propulsion: Offline. Suddenly, proximity alarm sounds. You see a strange alien craft approach",
+	                "desc": "Console: ....DISTRESS CALL (PRIORITY 1) FAILED....COMM ARRAY OFFLINE....",
 	                "loc": 3,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Bring backup power online and ping the alien craft",
-	                        "loc": 6
+	                        "desc": "Perform a full systems check for damage report",
+	                        "loc": 4
 	                    },
 	                    {
-	                        "desc": "Target alien craft and fire Defensive Turret",
+	                        "desc": "You're groggy. There isn't an immediate life threatning danger, you can afford some sleep",
 	                        "loc": 5
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Its so comfortable...you fall asleep. The ship drifts off into deep space...",
+	                "desc": "You perform a systems check. Console: ....COMMUNICATION: OFFLINE....LIFE SUPPORT: ONLINE....DEFENSIVE SYSTEMS: ONLINE....PROPULSION: OFFLINE....ALERT ALERT: UNKNOWN CRAFT APPORACHING.... You look out the window again, and a dark angular alien spacecraft stops a few hundred meters off the starboard hull",
 	                "loc": 4,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Try again?",
-	                        "loc": 0
+	                        "desc": "Engage backup power supply to bring communications back online and ping the alien craft",
+	                        "loc": 7
+	                    },
+	                    {
+	                        "desc": "Enable defensive systems. Target alien craft and fire",
+	                        "loc": 6
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Turret fires, you hit the alien craft but doing only minor damage. The ship fires back severly damaging your ship. Structural integrity compromised...your ship explodes with a brilliant flash",
+	                "desc": "Its quiet...it'll take days if not weeks until help arrives. You fall back to sleep in your pod...The ship slowly drifts off into deep space...",
 	                "loc": 5,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Try again?",
+	                        "desc": "Game Over. Try again?",
 	                        "loc": 0
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Communication: Online. Ping sent, you wait a few minutes with no response. Then suddenly, a transmission...Unknown spacecraft, power down immediately and surrender. You are trespassing in Zamdoid space",
+	                "desc": "Weapons fired. You follow the bright fiery trails of the missiles launch. They hit with muted explosions, doing only minor damage. The alien ship fires back with luminous gleaming projectiles which severely damages your ship. Console: WARNING WARNING WARNING....STRUCTURAL INTEGRITY COMPROMISED....your ship explodes with a brilliant flash...",
 	                "loc": 6,
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "You message response: ship damaged, require assistance",
-	                        "loc": 7
-	                    },
-	                     {
-	                        "desc": "You remain radio silent",
-	                        "loc": 8
+	                        "desc": "Game Over. Try again?",
+	                        "loc": 0
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "Alien craft: Surrender and prepared to be boarded",
+	                "desc": "Console: ....BACKUP POWER REROUTED....COMMUNICATION: ONLINE. Ping sent, you wait a few minutes with no response, all the while staring intently out your flight deck window. Console: TRANSMISSION DETECTED...'POWER DOWN IMMEDIATLY AND SURRENDER.'",
 	                "loc": 7,
 	                "type": "choice",
 	                "choices": [
-	                   {
-	                        "desc": "Never give up, never surrender. You put the ship into lockdown mode",
+	                    {
+	                        "desc": "You respond: SHIP DAMAGED....REQUIRE ASSISTANCE",
 	                        "loc": 8
 	                    },
 	                     {
-	                        "desc": "You target the ship with the Defensive Turret. The best defense is a good offense",
-	                        "loc": 5
-	                    }
-	                ]
-	            },
-	            {
-	                "desc": "The ship approaches. You see a boarding claw protrude from the hull. They are attempting to board",
-	                "loc": 8,
-	                "type": "choice",
-	                "choices": [
-	                   {
-	                        "desc": "Target alien craft and fire Defensive Turret. They'll never take you alive",
-	                        "loc": 5
-	                    },
-	                     {
-	                        "desc": "You quickly arm yourself and hide in the utility compartment",
+	                        "desc": "You remain radio silent",
 	                        "loc": 9
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You hear loud metallic booms as the alien craft grabs your ship with its claw. The ship shakes and you hear the outer hatch open",
+	                "desc": "ALIEN CRAFT: PREPARE TO BE BOARDED",
+	                "loc": 8,
+	                "type": "choice",
+	                "choices": [
+	                   {
+	                        "desc": "Never give up, never surrender. You put the ship into lockdown mode to prevent boarding",
+	                        "loc": 9
+	                    },
+	                     {
+	                        "desc": "The best defense is a good offense. You bring defensive weapons online, and fire.",
+	                        "loc": 6
+	                    }
+	                ]
+	            },
+	            {
+	                "desc": "The ship approaches. A terrifying boarding claw protrude from the alien craft. They are attempting to board",
 	                "loc": 9,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Take aim at the door with your blaster pistol. You fire as soon as the door opens",
-	                        "loc": 11
+	                        "desc": "They'll never take you alive. Bring defensive systems online, lock on and fire",
+	                        "loc": 6
 	                    },
 	                     {
-	                        "desc": "Barricade the door with supply crates. Hide",
+	                        "desc": "You grab your blaster pistol and lock yourself in the utility compartment",
 	                        "loc": 10
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You hear loud heavy thuds of footsteps getting closer. It stops in front of your compartment. The door is forced open with ease, supply crates toppling over. You see the shadowy outline of a humanoid approach closer",
+	                "desc": "You hear loud metallic screeches as the alien claw grabs hold of your ship. Your entire ship shudders as you hear the outer hatch forcibly open",
 	                "loc": 10,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Remain motionless. Hope the alien will not see you",
+	                        "desc": "Take aim at the door with your blaster pistol. You squeeze the trigger as soon as the door opens...",
 	                        "loc": 12
 	                    },
 	                     {
-	                        "desc": "Fire your blaster at the alien",
+	                        "desc": "Barricade the door with supply crates. Hide underneath the deck",
 	                        "loc": 11
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": 'You hit the alien dead on...it staggers back, "Ow! <insert player name> I told you to stop messing around to goto bed! Its way past your bedtime',
+	                "desc": "You hear pronounced, heavy thuds of footsteps getting closer and closer... It stops in front of your compartment. The door opens, with supply crates toppling over. You see a shadowy outline of a humanoid approach closer...",
 	                "loc": 11,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": '"Sorry Mom", you climb out of your pillow fort and head to bed',
-	                        "loc": 14
+	                        "desc": "Remain motionless. Hope the alien will not see you",
+	                        "loc": 13
 	                    },
 	                     {
-	                        "desc": "5 more minutes Mom!",
-	                        "loc": 15
+	                        "desc": "Aim and fire your blaster!",
+	                        "loc": 12
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": 'You can feel the alien hovering above you and yet you still do not move. The compartment suddenly gets lifted up, "<insert player name>, I told you to stop messing around and goto bed! Its way past your bedtime',
+	                "desc": 'You hit the alien center mass...it staggers back, "Ow! I told you to stop messing around and goto bed! Its way past your bedtime.',
 	                "loc": 12,
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": '"5 more minutes Mom!"',
+	                        "desc": '"Sorry, Mom." ...you climb out of your pillow fort and head to bed',
 	                        "loc": 15
 	                    },
 	                     {
-	                        "desc": "No, Mom. You're not the boss of me!",
-	                        "loc": 13
+	                        "desc": "5 more minutes, Mom!",
+	                        "loc": 16
 	                    }
 	                ]
 	            },
 	            {
-	                "desc": "You are grounded for the next week",
+	                "desc": 'You sense the alien hovering above you and yet you still do not move. The compartment suddenly gets lifted up... "I told you to stop messing around and goto bed! Its way past your bedtime.',
 	                "loc": 13,
+	                "type": "choice",
+	                "choices": [
+	                   {
+	                        "desc": '"5 more minutes, Mom!"',
+	                        "loc": 16
+	                    },
+	                     {
+	                        "desc": "No, Mom. You're not the boss of me!",
+	                        "loc": 14
+	                    }
+	                ]
+	            },
+	            {
+	                "desc": "You are grounded for the next week. No TV. No iPad",
+	                "loc": 14,
 	                "type": "choice",
 	                "choices": [
 	                   {
@@ -212,7 +218,7 @@ let playerName = $('input').val();
 	            },
 	            {
 	                "desc": "You drift off to sleep in your warm bed dreaming of your next space adventure",
-	                "loc": 14,
+	                "loc": 15,
 	                "type": "choice",
 	                "choices": [
 	                   {
@@ -222,8 +228,8 @@ let playerName = $('input').val();
 	                ]
 	            },
 	            {
-	                "desc": "You get 5 more minutes in your pillow fort, and head to bed dreaming of your next space adventure",
-	                "loc": 15,
+	                "desc": "You get 5 more minutes in your pillow fort then head off to bed dreaming of your next space adventure",
+	                "loc": 16,
 	                "type": "choice",
 	                "choices": [
 	                   {
@@ -235,20 +241,24 @@ let playerName = $('input').val();
 
 	];
 
+			// Append choices onto page
 	        function add_choice(desc, loc) {
-	            $("#choices").append("<a class='waves-effect waves-light btn'>" + "<button class=choice data-loc=" + loc + ">" + desc + "</button>" + "</a>");
+	            $("#choices").append("<a class='waves-effect waves-cool btn-large'>" + "<button class=choice data-loc=" + loc + ">" + desc + "</button>" + "</a>");
 	        }	
 
+	        // Append scenario onto page
 	        function set_page_desc(desc) {
 	            $("#scenario").append("<h6>" + desc + "</h6>");
 	        }
 
+	        // Clearing page
 	        function clear_page() {
 	            $("#scenario").empty();
 	            $("#choices").empty();
 	        }
+
+	        // Fetch JSON for page data associated with given id
 	        function load_page(id) {
-	            // Fetch JSON for page data associated with given ID
 	            let page_data = theVoid[id];
 
 	            clear_page();
@@ -261,7 +271,7 @@ let playerName = $('input').val();
 	            }
 	        }
 
-
+	        // Event listener on click
 	        let current_page = 0;
 	            load_page(0);
 	            $('#choices').on('click', '.choice', function () {
