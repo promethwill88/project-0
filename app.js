@@ -44,7 +44,7 @@ $(document).on("ready", function() {
 	                        "loc": 3
 	                    },
 	                    {
-	                        "desc": "Perform a full systems check for damage report",
+	                        "desc": "Perform a full systems check",
 	                        "loc": 4
 	                    }
 	                ]
@@ -55,11 +55,11 @@ $(document).on("ready", function() {
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Perform a full systems check for damage report",
+	                        "desc": "Perform a full systems check",
 	                        "loc": 4
 	                    },
 	                    {
-	                        "desc": "You're groggy. There isn't an immediate life threatning danger, you can afford some sleep",
+	                        "desc": "You're groggy. Go back to sleep",
 	                        "loc": 5
 	                    }
 	                ]
@@ -70,7 +70,7 @@ $(document).on("ready", function() {
 	                "type": "choice",
 	                "choices": [
 	                    {
-	                        "desc": "Engage backup power supply to bring communications back online and ping the alien craft",
+	                        "desc": "Bring communications back online and ping the alien craft",
 	                        "loc": 7
 	                    },
 	                    {
@@ -122,11 +122,11 @@ $(document).on("ready", function() {
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Never give up, never surrender. You put the ship into lockdown mode to prevent boarding",
+	                        "desc": "Never give up, never surrender. Put the ship into lockdown mode",
 	                        "loc": 9
 	                    },
 	                     {
-	                        "desc": "The best defense is a good offense. You bring defensive weapons online, and fire.",
+	                        "desc": "The best defense is a good offense. Bring defensive weapons online, and fire!",
 	                        "loc": 6
 	                    }
 	                ]
@@ -152,7 +152,7 @@ $(document).on("ready", function() {
 	                "type": "choice",
 	                "choices": [
 	                   {
-	                        "desc": "Take aim at the door with your blaster pistol. You squeeze the trigger as soon as the door opens...",
+	                        "desc": "Take aim at the door. You squeeze the trigger as soon as the door opens",
 	                        "loc": 12
 	                    },
 	                     {
