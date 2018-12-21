@@ -1,0 +1,88 @@
+body {
+	background-color: #263238;
+}
+
+#header {
+	text-align: center;
+}
+
+a {
+	margin-top: 70px;
+	margin-right: 10px;
+}
+
+button {
+	border: none;	
+	background-color: rgba(0,0,0,0);
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+button:hover{
+	background color: black;
+}
+
+.container {
+	text-align: center;
+}
+
+.spotify {
+	margin-top: 80px;
+}
+
+h1 {
+	font-family: 'Bungee Hairline', cursive;
+	color: white;
+	-webkit-animation: fadein 7s;
+       -moz-animation: fadein 7s;
+        -ms-animation: fadein 7s;
+         -o-animation: fadein 7s;
+            animation: fadein 7s;
+}
+
+p {
+	color: white;
+	font-family: 'Bungee Hairline', cursive;
+	color: white;
+	-webkit-animation: fadein 7s; 
+       -moz-animation: fadein 7s; 
+        -ms-animation: fadein 7s;
+         -o-animation: fadein 7s;
+            animation: fadein 7s;
+}
+
+h6 {
+	font-family: 'Inconsolata', monospace;
+	color: white;
+	margin-top: 70px;
+	-webkit-animation: fadein 3s; 
+       -moz-animation: fadein 3s; 
+        -ms-animation: fadein 3s; 
+         -o-animation: fadein 3s;
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
